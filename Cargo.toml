@@ -1,0 +1,10 @@
+[package]
+name = "SigmaOS-hdd"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "SigmaOS hdd component"
+
+[lib]
+name = "hdd"
+path = "src/lib.rs"
