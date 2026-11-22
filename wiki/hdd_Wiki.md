@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-hdd Component Wiki
+# SigmaOS-hdd Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-hdd provides HDD component for SigmaOS for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-hdd provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-hdd Abstraction
-- Fail-Fast on SigmaOS-hdd Initialization Errors
-- Deterministic SigmaOS-hdd Setup
-- Clear Abstraction Over SigmaOS-hdd APIs
-- Composition over Inheritance for SigmaOS-hdd extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-hdd Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-hdd Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-hdd Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-hdd APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-hdd extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-hdd follows a SigmaOS-hdd pattern:
+SigmaOS-hdd follows a SigmaOS-hdd pattern:
 - **SigmaOS-hdd Core**: Provides SigmaOS-hdd support, SigmaOS-hdd management, and SigmaOS-hdd tracking
 - **Management**: Supports SigmaOS-hdd management, SigmaOS-hdd configuration, and SigmaOS-hdd lifecycle
 - **Tracking**: Supports SigmaOS-hdd status, SigmaOS-hdd tracking, and SigmaOS-hdd lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-hdd follows a SigmaOS-hdd pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-hdd by given configuration
--  - Register a SigmaOS-hdd by given name
--  - Get SigmaOS-hdd status and SigmaOS-hdd availability
--  - Track SigmaOS-hdd management and SigmaOS-hdd tracking
+- Manage a SigmaOS-hdd by given configuration
+- Register a SigmaOS-hdd by given name
+- Get SigmaOS-hdd status and SigmaOS-hdd availability
+- Track SigmaOS-hdd management and SigmaOS-hdd tracking
 - Error types for SigmaOS-hdd failure scenarios or unsupported SigmaOS-hdd types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-hdd init, SigmaOS-hdd management)
 3. **Assert**: Verify the expected SigmaOS-hdd results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-hdd initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-hdd failure scenarios
 - Unit tests provided for SigmaOS-hdd management and configuration
